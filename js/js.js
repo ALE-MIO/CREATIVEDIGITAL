@@ -49,28 +49,6 @@
     });
 })(jQuery)
 
-;
-(function ($) {
-    $(function () {
-        $(document).ready(function () {
-            $("#AdressJump").on("click", function () {
-                $('body,html').animate({scrollTop: 0}, 1500);
-            });
-        });
-    });
-})(jQuery)
-
-;
-(function ($) {
-    $(function () {
-        $(document).ready(function () {
-            $("#PhonessJump").on("click", function () {
-                $('body,html').animate({scrollTop: 0}, 1500);
-            });
-        });
-    });
-})(jQuery)
-
 
 
 /* /////// ...SCROLLING-TO-SECTIONS... /////// */

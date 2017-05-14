@@ -99,7 +99,9 @@ body {
   -webkit-transition: all 1.2s ease-out;
           transition: all 1.2s ease-out;
   -webkit-filter: hue-rotate(360deg);
-          filter: hue-rotate(360deg); }
+          filter: hue-rotate(360deg); 
+          overflow: hidden;
+      }
 
 .ba-header__logo-W {
   position: absolute;
@@ -167,7 +169,8 @@ body {
   width: 47%;
   height: 50px;
   top: 0;
-  right: 0; }
+  right: 0; 
+}
 
 .ba-header__menu-UL {
   width: 340px;
@@ -248,7 +251,15 @@ body {
 
   .ba-header__p {
     font-size: 20px;
-    padding: 0 50px 0 50px; } }
+    padding: 0 50px 0 50px; } 
+  
+    .ba-header__menu-UL {
+  
+  width: 100%;
+   
+  margin: 0 0 0 0;
+  }
+}
 /* ---- ABOUT-US ----  ////////////////////////////////////////////////////////////////////////////// */
 .ba-ABOUT-US {
   position: relative;
@@ -260,7 +271,9 @@ body {
   background-color: #EBEBEB;
   background-size: cover;
   opacity: 1.0;
-  font-size: 0; }
+  font-size: 0; 
+	overflow: hidden;
+	}
 
 .ba-ABOUT-US__first-wrapper {
   position: relative;
@@ -468,7 +481,9 @@ body {
   width: 100%;
   height: 1070px;
   height: 674px;
-  opacity: 1.0; }
+  opacity: 1.0; 
+  overflow: hidden;
+}
 
 .ba-PORTFOLIO__grand-wrapper {
   display: -webkit-box;
@@ -733,7 +748,6 @@ body {
     -webkit-align-items: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
-    /*display: block;*/
     width: 100%;
     height: 1015px; }
 
@@ -819,7 +833,9 @@ body {
   background-repeat: no-repeat;
   background-color: #9F9AD0;
   background-size: cover;
-  opacity: 1.0; }
+  opacity: 1.0; 
+  overflow: hidden;
+}
 
 .ba-RECENT-WORKS__background-wrapper {
   position: relative;
@@ -1007,7 +1023,9 @@ i.nextArrow {
   background-repeat: no-repeat;
   background-color: #EBEBEB;
   background-size: cover;
-  opacity: 1.0; }
+  opacity: 1.0; 
+  overflow: hidden;
+}
 
 .ba-OUR-TEAM__header-wrap {
   position: relative;
@@ -1212,7 +1230,8 @@ div .ba-OUR-TEAM__socials-wrapper {
   height: 1070px;
   height: 760px;
   background-color: #9F9AD0;
-  overflow: hidden; }
+  overflow: hidden; 
+}
 
 .ba-CONTACT-US__MAP {
   position: relative;
@@ -1285,7 +1304,9 @@ div .ba-OUR-TEAM__socials-wrapper {
   background-color: #9F9AD0;
   background-color: yellowgreen;
   background: rgba(255, 165, 0, 0);
-  margin: -390px 0 0 0; }
+  margin: -390px 0 0 0; 
+  /*overflow: hidden;*/
+}
 
 .ba-MAP-ALTERNATIVE-wrapper div {
   font-family: "PTSans", sans-serif; }
@@ -1356,7 +1377,7 @@ div .ba-OUR-TEAM__socials-wrapper {
   vertical-align: middle;
   height: 100%; }
 
-.ba-CONTACTS-JUMP__title a,
+.ba-CONTACTS-JUMP__title span,
 .ba-CONTACTS-JUMP__title {
   display: inline-block;
   text-decoration: none;
@@ -1538,6 +1559,7 @@ input[type="email"]::placeholder {
     overflow: visible; }
 
   .ba-MAP-ALTERNATIVE-wrapper {
+  	position: relative;
     height: 790px;
     margin: -290px 0 0 0;
     overflow: visible; }
@@ -1547,6 +1569,14 @@ input[type="email"]::placeholder {
     height: 10px;
     margin: -890px 0 0 0;
     overflow: visible; }
+    .ba-MAP-wrapper__header-wrap-absolute{
+    	display: none;
+    }
+    div .ba-CONTACTS-JUMP__wrap{
+    	position: absolute;
+    	top:150px;
+    	right: 0;
+    }
 
   .space {
     display: none; }
@@ -1574,17 +1604,20 @@ input[type="email"]::placeholder {
     margin: 10px 0 0 0; }
 
   .contact-form__item--big textarea {
-    margin: 80px 0 116px 0;
+  	position: absolute;
+  	top: 513px;
+    left: 0; 
     height: 100px; }
 
   .contact-form .contact-form__btn {
-    padding: 17px 27px 54px;
+  	margin: 120px 0 0 0;
+    padding: 21px 21px 41px;
     font-size: 19px; }
 
   .ba-SCROLL-TOP__container {
     position: absolute;
     top: 713px;
-    left: 0px; }
+    right: 0px; }
 
   .ba-CONTACTS-JUMP__wrap {
     position: absolute;
@@ -1604,7 +1637,9 @@ input[type="email"]::placeholder {
   background-color: #9F9AD0;
   background-size: cover;
   opacity: 1.0;
-  font-size: 0; }
+  font-size: 0; 
+  overflow: hidden;
+}
 
 .ba-footer__wrapper-left {
   position: relative;
@@ -1716,7 +1751,7 @@ input[type="email"]::placeholder {
             align-items: stretch;
     padding: 0;
     margin: 45px 0 0 -155px;
-    width: 236%;
+    width: 172%;
     height: 300px;
     -webkit-transition: all 0.3s ease-out;
             transition: all 0.3s ease-out; }
